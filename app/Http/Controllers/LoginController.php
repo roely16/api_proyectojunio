@@ -18,7 +18,7 @@ class LoginController extends Controller
 
         $persona = Persona::where('usuario', '=', $usuario)->get();
 
-        if (sizeof($peresona) <= 0) {
+        if (sizeof($persona) <= 0) {
         
             return response()->json(["code" => 100]);
 
